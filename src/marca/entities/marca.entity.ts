@@ -8,9 +8,9 @@ export class Marca {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ type: 'varchar', length: 255 })
+    @Column({ type: 'varchar', length: 255, nullable: true })
     nombre: string;
 
-    @Column({ type: 'varchar', length: 255})
+    @Column({ type: 'varchar', length: 255, nullable: true})
     descripcion: string;
 }
